@@ -3,8 +3,12 @@ import { User } from "./components/user/User";
 import { Container, CssBaseline, Grid } from "@mui/material";
 import { QueryProvider } from "./providers/QueryProvider";
 import { defaultQuery } from "./contants/defaultQuery";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Anak Ajaib";
+  }, []);
   return (
     <>
       <CssBaseline />
