@@ -5,6 +5,7 @@ import { useRandomUser } from "hooks/useRandomUser";
 import { TableHeaders } from "components/table/Table.interface";
 import { Table } from "components/table/Table";
 import format from "date-fns/format";
+import { Filter } from "components/filter/Filter";
 
 const tableHeaders: TableHeaders[] = [
   {
@@ -54,6 +55,7 @@ export const User = () => {
     return <div>Something wrong with the server, please refresh the page</div>;
   return (
     <Box>
+      <Filter />
       {dataTable.length > 0 && (
         <Table headers={tableHeaders} dataTable={dataTable}></Table>
       )}
