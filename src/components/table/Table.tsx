@@ -9,7 +9,6 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  TableSortLabel,
 } from "@mui/material";
 import { ChangeEvent } from "react";
 import { TableProps } from "./Table.interface";
